@@ -84,6 +84,9 @@ jobs:
       - name: CNAME Records
         run: echo "${{ secrets.WEBSITE_DOMAIN }}" >> ./out/CNAME
 
+      - name: No Jekyll
+        run: touch ./out/.nojekyll
+
       - name: Deploy gh-pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
