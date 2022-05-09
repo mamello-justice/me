@@ -11,7 +11,7 @@
     "lint": "next lint",
     "cypress": "cypress open",
     "cypress:ci": "cypress run",
-    "publish": "gh-pages -d out --no-history"
+    "deploy": "gh-pages -d out --no-history"
   },
   "dependencies": {
     "next": "12.1.4",
